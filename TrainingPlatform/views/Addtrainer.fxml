@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="456.0" style="-fx-background-color: #f2f1f1;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AddTrainer">
+   <children>
+      <Label layoutX="39.0" layoutY="141.0" text="Name">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="namefield" layoutX="175.0" layoutY="137.0" prefHeight="27.0" prefWidth="186.0" promptText="name" />
+      <HBox layoutX="-1.0" prefHeight="82.0" prefWidth="456.0" style="-fx-background-color: #2B9FF2;">
+         <children>
+            <ImageView fitHeight="62.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Classes/icons/icons8_add_male_user_64px_4.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="21.0" top="7.0" />
+               </HBox.margin>
+            </ImageView>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD TRAINER">
+               <font>
+                  <Font name="Arial" size="28.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" top="30.0" />
+               </HBox.margin></Text>
+         </children>
+      </HBox>
+      <TextField fx:id="lastnamefield" layoutX="175.0" layoutY="189.0" prefHeight="27.0" prefWidth="186.0" promptText="last name" />
+      <Label layoutX="42.0" layoutY="220.0">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="358.0" text="Organisme">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="savebutton" layoutX="28.0" layoutY="419.0" mnemonicParsing="false" onAction="#save" prefHeight="31.0" prefWidth="134.0" style="-fx-background-color: #23e191;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitbutton" layoutX="221.0" layoutY="419.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="31.0" prefWidth="134.0" style="-fx-background-color: #f0461e;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="AlertMessage" layoutX="45.0" layoutY="92.0" prefHeight="27.0" prefWidth="305.0" textFill="RED">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="savedlabel" layoutX="51.0" layoutY="92.0" prefHeight="27.0" prefWidth="298.0" textFill="#00d100">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="193.0" text="Lastname">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combobox" layoutX="175.0" layoutY="354.0" prefHeight="27.0" prefWidth="186.0" />
+      <Label layoutX="39.0" layoutY="241.0" text="E-mail">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailfield" layoutX="175.0" layoutY="237.0" prefHeight="27.0" prefWidth="186.0" promptText="Email" />
+      <TextField fx:id="phonenumberfield" layoutX="175.0" layoutY="290.0" prefHeight="27.0" prefWidth="186.0" promptText="phone number" />
+      <Label layoutX="41.0" layoutY="294.0" text="Tel_Num">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

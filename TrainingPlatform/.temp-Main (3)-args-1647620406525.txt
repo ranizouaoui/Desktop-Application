@@ -1,0 +1,11 @@
+--module-path
+"C:\\java\\javafx-sdk-17.0.2\\lib"
+--add-modules
+javafx.controls,javafx.fxml
+-Dfile.encoding=Cp1252
+-p
+"C:\\java\\mysql-connector-java-8.0.27.jar"
+-classpath
+"C:\\Users\\Zouaoui\\eclipse-workspace\\loginapplication"
+-XX:+ShowCodeDetailsInExceptionMessages
+Login.Main

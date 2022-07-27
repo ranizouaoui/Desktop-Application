@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.4" prefWidth="651.0" style="-fx-background-color: #F8F8F8;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Page3simple">
+   <children>
+      <TabPane layoutX="1.0" prefHeight="427.0" prefWidth="650.0" stylesheets="@../Classes/application.css" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Training">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <BorderPane prefHeight="409.0" prefWidth="655.0">
+                           <top>
+                              <HBox prefHeight="60.0" prefWidth="655.0" spacing="11.0" style="-fx-background-color: #EDEDEE;" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label prefHeight="40.0" prefWidth="152.0" text="Training" textFill="#696464">
+                                       <font>
+                                          <Font name="Arial" size="24.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="12.0" left="22.0" top="1.0" />
+                                       </padding>
+                                    </Label>
+                                    <Button mnemonicParsing="false" onMouseClicked="#getAddView" prefHeight="31.0" prefWidth="111.0" styleClass="button2" text="Add New    " textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="23.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                             <styleClass>
+                                                <String fx:value="button2" />
+                                                <String fx:value="button2" />
+                                             </styleClass>
+                                             <image>
+                                                <Image url="@../Classes/icons/icons8_joyent_48px.png" />
+                                             </image>
+                                             <rotationAxis>
+                                                <Point3D />
+                                             </rotationAxis>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <ImageView fitHeight="32.0" fitWidth="45.0" onMouseClicked="#getEditView" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Classes/icons/icons8_Female_User_Update_48px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="32.0" fitWidth="45.0" onMouseClicked="#DeleteFromTable" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Classes/icons/icons8_Remove_48px_1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <TextField fx:id="tx_recherche" prefHeight="27.0" prefWidth="173.0" promptText="  Search Training" />
+                                    <ImageView fx:id="refreshbuttom" fitHeight="27.0" fitWidth="26.0" onMouseClicked="#refreshTable" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets left="4.0" />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@../Classes/icons/icons8_refresh_80px_3.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <padding>
+                                    <Insets top="12.0" />
+                                 </padding>
+                              </HBox>
+                           </top>
+                           <bottom>
+                              <HBox prefHeight="54.0" prefWidth="655.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Button fx:id="buttonon" mnemonicParsing="false" onMouseClicked="#GetParticipantsList" prefHeight="30.0" prefWidth="134.0" text="List of participants" textFill="WHITE">
+                                       <padding>
+                                          <Insets right="-2.0" top="-4.0" />
+                                       </padding>
+                                       <HBox.margin>
+                                          <Insets bottom="6.0" left="20.0" top="14.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </bottom>
+                           <center>
+                              <TableView fx:id="studentsTable" prefHeight="254.0" prefWidth="638.0" stylesheets="@../Classes/application.css" BorderPane.alignment="CENTER">
+                                 <columns>
+                                    <TableColumn fx:id="idCol" prefWidth="35.99999922513962" text="ID" />
+                                    <TableColumn fx:id="titleCol" prefWidth="94.39997100830078" text="Title" />
+                                    <TableColumn fx:id="domainCol" minWidth="11.0" prefWidth="88.800048828125" text="Domain" />
+                                    <TableColumn fx:id="periodeCol" prefWidth="72.0" text="Period" />
+                                    <TableColumn fx:id="anneeCol" prefWidth="72.79998779296875" text="Year" />
+                                    <TableColumn fx:id="moiscol" prefWidth="76.800048828125" text="Month" />
+                                    <TableColumn fx:id="trainercol" prefWidth="70.39999389648438" text="Trainer" />
+                                    <TableColumn fx:id="participantnumcol" prefWidth="131.199951171875" text="Participants number" />
+                                 </columns>
+                              </TableView>
+                           </center>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.4" prefWidth="651.2" style="-fx-background-color: #F8F8F8;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Page2">
+   <children>
+      <TabPane layoutX="1.0" prefHeight="414.0" prefWidth="649.0" stylesheets="@../Classes/application.css" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="User">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <BorderPane prefHeight="409.0" prefWidth="655.0">
+                           <top>
+                              <HBox prefHeight="60.0" prefWidth="655.0" spacing="11.0" style="-fx-background-color: #EDEDEE;" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label prefHeight="40.0" prefWidth="152.0" text="Users" textFill="#696464">
+                                       <font>
+                                          <Font name="Arial" size="24.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="12.0" left="22.0" top="1.0" />
+                                       </padding>
+                                    </Label>
+                                    <Button mnemonicParsing="false" onMouseClicked="#getAddView" prefHeight="31.0" prefWidth="111.0" styleClass="button2" text="Add New    " textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="23.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                             <styleClass>
+                                                <String fx:value="button2" />
+                                                <String fx:value="button2" />
+                                             </styleClass>
+                                             <image>
+                                                <Image url="@../Classes/icons/icons8_joyent_48px.png" />
+                                             </image>
+                                             <rotationAxis>
+                                                <Point3D />
+                                             </rotationAxis>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <ImageView fitHeight="32.0" fitWidth="45.0" onMouseClicked="#getEditView" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Classes/icons/icons8_Female_User_Update_48px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <TextField fx:id="tx_recherche" onAction="#search_user" prefHeight="27.0" prefWidth="173.0" promptText="  Search Users">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <HBox.margin>
+                                          <Insets bottom="7.0" left="16.0" right="7.0" top="4.0" />
+                                       </HBox.margin></TextField>
+                                    <ImageView fx:id="refreshbuttom" fitHeight="27.0" fitWidth="26.0" onMouseClicked="#refreshTable" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets left="8.0" top="5.0" />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@../Classes/icons/icons8_refresh_80px_3.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <padding>
+                                    <Insets top="12.0" />
+                                 </padding>
+                              </HBox>
+                           </top>
+                           <center>
+                              <TableView fx:id="usersTable" prefHeight="350.0" prefWidth="375.0" stylesheets="@../Classes/application.css" BorderPane.alignment="CENTER">
+                                 <columns>
+                                    <TableColumn fx:id="idCol" prefWidth="115.20001065731049" text="ID" />
+                                    <TableColumn fx:id="loginCol" prefWidth="133.59998321533203" text="login" />
+                                    <TableColumn fx:id="passwordCol" prefWidth="230.4000244140625" text="Password" />
+                                    <TableColumn fx:id="roleCol" prefWidth="159.99996948242188" text="role" />
+                                 </columns>
+                              </TableView>
+                           </center>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+           
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
