@@ -24,4 +24,4 @@ It is in this context that our project is appropriate. The goal is the design an
  
 - For more details see our YouTube video
 
-[![Everything Is AWESOME](https://img.youtube.com/vi/5fJ3aJjek6Q/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
+[![Everything Is AWESOME](https://img.youtube.com/vi/5fJ3aJjek6Q/0.jpg)](https://www.youtube.com/watch?v=5fJ3aJjek6Q "Everything Is AWESOME")
