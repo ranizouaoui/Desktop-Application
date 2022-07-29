@@ -22,6 +22,6 @@ It is in this context that our project is appropriate. The goal is the design an
 
  <h2>More details</h2>
  
-- consulter notre vidéo YouTube 
+- For more details see our YouTube video
 
 [![Everything Is AWESOME](https://img.youtube.com/vi/5fJ3aJjek6Q/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
